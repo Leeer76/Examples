@@ -1,0 +1,1352 @@
+﻿/*General config*/
+@font-face {
+    font-family: myFirstFont;
+    src: url('code.otf');
+}
+
+@font-face {
+    font-family: Quantify;
+    src: url('Quantify Bold v2.6.ttf');
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.navbar li a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.bodyText {
+    font-family: myFirstFont;
+    margin-top: 5px;
+}
+
+.title {
+    font-family: Quantify;
+    color: #e4e526;
+    font-size: 36pt;
+    position:relative;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* Header and Footer styling*/
+footer {
+    margin-top: 1em;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    clear: both;
+}
+
+#create:visited {
+    color: black;
+}
+
+a:hover, #cust:hover, #create:hover, #custMenuList li:hover {
+    text-shadow: 0 0 5px #e4e526;
+}
+
+.navbar {
+    background: black;
+    width: 100%;
+    display: flex;
+    -webkit-align-content:center;
+}
+
+.inlineList, .inlineLogo {
+    display: inline-block;
+    width: auto;
+}
+
+.inlineLogo {
+   width: 15%;
+   margin-left: 2em;
+}
+
+
+.inlineList li {
+    display: inline;
+    font-size: 18pt;
+    padding-right: 2em;
+    font-family: myFirstFont;
+    color: white;
+}
+
+.inlineList {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.inline {
+    display: inline-block;
+    list-style-type: none;
+    text-align: right;
+    margin-right: 2em;
+}
+
+.inline li {
+    display: inline;
+    padding-right: 2em;
+    font-size: 14pt;
+}
+
+.inline img {
+    height: 30px;
+    width: auto;
+}
+
+.inline li:hover {
+    filter: drop-shadow(0 0 5px #e4e526);
+}
+
+.block {
+    display: block;
+    padding: 3px;
+}
+
+.reg {
+    padding: 3px;
+    font-family: sans-serif;
+    color: black;
+    margin-top: 10px;
+}
+
+#customer {
+    margin-left: 3em;
+}
+
+#create {
+    font-size: 10pt;
+    text-decoration: underline;
+    padding-right: 2em;
+}
+
+#copyR {
+    margin-left: 1em;
+    margin-top: auto;
+    font-size: 14pt;
+    display: inline-block;
+    color: #e4e526;
+}
+
+/*slider styling*/
+
+#slider {
+    width: 1072px;
+    height: 548px;
+    overflow: hidden;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    margin-top: 1em;
+    z-index: 10;
+}
+
+.sliderItems {
+    display: block;
+    width: 5000px;
+    height: 548px;
+    margin: 0;
+    padding: 0;
+}
+
+.sliderItem {
+    float: left;
+    list-style-type: none;
+    width: 1072px;
+    height: 548px;
+}
+
+#name {
+    display: inline-block;
+    position: absolute;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#custMenu {
+    display: inline-block;
+    box-shadow: 3px 3px 10px;
+    border-radius: 6px;
+    margin-top: 3em;
+    padding: 0px 1em 0px 0px;
+    position: absolute;
+    z-index: 25;
+    background: white;
+}
+
+#custMenuList{
+    color: black;
+    font-family: myFirstFont;
+    list-style-type: none;
+}
+
+#custMenuList li {
+    margin: 0;
+    padding: .5em 1em .5em 0px;
+}
+
+#custMenuList a{
+    color: black;
+}
+
+#user, #username{
+    color:#e4e526;
+    font-family: myFirstFont;
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+/*index page styling minus slider*/
+.index {
+    display: inline-block;
+    width: 45%;
+    margin-top: 3em;
+}
+
+.indexH2 {
+    display: inline-block;
+    clear: left;
+    margin: 0;
+    font-family: myFirstFont;
+    color: #e4e526;
+    font-size: 24pt;
+}
+
+#indexBlock1 p {
+    clear: left;
+}
+
+#indexPhoto1 {
+    width: 350px;
+    height: auto;
+    float:right;
+}
+
+#indexBlock2 {
+    height: 250px;
+    float: right;
+}
+
+#indexBlock1 {
+    margin-left: 3em;
+}
+
+#download {
+    list-style-type: none;
+    margin: 0;
+}
+
+#download a:link {
+    display: block;
+    text-decoration: underline;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/*Products page style*/
+
+
+.productPG {
+    min-height: 600px;
+}
+
+.products {
+    width: 100%;
+    height: 350px;
+    margin-left:  50%;
+    transform:translate(-50%,0);
+    text-align: center;
+}
+
+.product {
+    width: auto;
+    height: 350px;;
+    display: inline-block;
+}
+
+.prodDetail, .prodName {
+    font-family: myFirstFont;
+    display: inline-block;
+}
+
+.prodDetail {
+    text-align: center;
+}
+
+.prodDetail h2 {
+    color: black;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.prodName {
+    display: none;
+}
+
+#productDetail {
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    display: none;
+}
+
+#desc {
+    width: 20em;
+    vertical-align: top;
+    text-align: left;
+}
+
+.spec {
+    width: 10em;
+}
+
+td, th {
+    margin: 0;
+    padding: 5px;
+}
+
+.right {
+    text-align: left;
+}
+
+.left {
+    text-align: left;
+}
+
+.right h2 {
+    text-align: center;
+}
+
+.prodName {
+    color: #e4e526;
+    font-size: 36pt;
+    text-align: center;
+}
+
+
+/*About page styling*/
+
+.aboutPic {
+    width: 550px;
+    box-shadow: 5px 5px 20px -2px black;
+    display: inline-block;
+}
+
+.text {
+    font-family: myFirstFont;
+    font-size: 14pt;
+}
+
+#block1Photo {
+    float: right;
+}
+
+#block2Photo {
+    float: left;
+}
+
+#infoBlock1 {
+    display: inline-block;
+    width: 70em;
+    margin-left: 50%;
+    transform:translate(-50%,0);
+    margin-bottom: 2em;
+}
+
+#block1Text {
+    width: 25em;
+    margin-left: 3em;
+}
+
+
+#infoBlock2 {
+    display: inline-block;
+    width: 70em;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    margin-bottom: 2em;
+}
+
+#block2Text {
+    width: 25em;
+    margin-left: auto;
+    margin-right: 3em;
+}
+
+/*contact page styling*/
+
+#map {
+    width: 100%;
+    height: 600px;
+}
+
+.cInfo h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.contact {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+
+.cInfo {
+    text-align: center;
+}
+
+
+.sales {
+    width: 100%;
+}
+
+.cTable {
+    margin: 0;
+    padding: 0;
+    margin-left: 50%;
+    transform:translate(-50%,0);
+}
+
+.bold {
+    font-family: Quantify;
+    font-size: 16pt;
+    text-align: left;
+    color: #e4e526;
+}
+
+.norm {
+    font-family: myFirstFont;
+    font-size: 14pt;
+    text-align: left;
+}
+
+
+/*Login page styling*/
+
+#login {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 1em;
+    margin-left: 50%;
+    margin-top: 12em;
+    transform:translate(-50%,0);
+    font-family: myFirstFont;
+    border-radius: 5px;
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+}
+
+.logTxt {
+    width: 13em;
+    margin-bottom: .5em;
+}
+
+.logBtn {
+    border: none;
+    background: #e4e526;
+}
+
+.logTxt:focus {
+    box-shadow: 0px 0px 10px 2px #e4e526;
+    font-family: sans-serif;
+}
+
+.logBtn:hover {
+    box-shadow: 0px 0px 10px 2px #ffffff;
+}
+
+.error {
+    float: right;
+    padding-left: .5em;
+}
+
+
+/*register page styling*/
+
+
+.register {
+    text-align: right;
+    color: white;
+}
+
+.txtBox {
+    height: 2em;
+    width: 20em;
+    border-radius: 5px;
+    border: none;
+}
+
+.longTxt {
+    width: 30em;
+}
+
+.txtBox:focus {
+    box-shadow: 0px 0px 10px 2px #e4e526;
+    font-family: sans-serif;
+}
+
+.acctTable {
+    margin-top: 2em;
+    margin-left: 50%;
+    transform:translate(-50%,0);
+    font-family: myFirstFont;
+    border-radius: 5px;
+    background: black;
+    margin-bottom: 2em;
+    padding: 2em;
+}
+
+.acctTable td {
+    padding-bottom: 1em;
+}
+
+.acctTable th {
+    color: #e4e526;
+    font-family: Quantify;
+}
+
+.regBtn {
+    width: 20em;
+    background: #e4e526;
+    border: none;
+    border-radius: 5px;
+    height: 3em;
+    font-family: Quantify;
+    font-size: 10pt;
+}
+
+.regBtn:hover {
+    box-shadow: 0px 0px 10px 2px #ffffff;
+}
+
+
+/* submit msg page/submitpage styling*/
+
+#msgBody {
+    text-align: center;
+    font-family: myFirstFont;
+    font-size: 18pt;
+    margin-top: 3em;
+    min-height: 21.5em;
+}
+
+.center {
+    display: inline-block;
+    width: 58em;
+    font-family: myFirstFont;
+}
+
+.txtSub {
+    width: 68em;
+    height: 20em;
+    border: none;
+    box-shadow: 2px 2px 10px black;
+}
+
+#sbmTxt {
+    display: inline-block;
+    margin-top: 3.5em;
+    margin-bottom: 3em;
+    margin-left: 100%;
+    transform: translate(-100%,0);
+}
+
+.subBtn, .type {
+    font-family: myFirstFont;
+}
+
+.subBtn {
+    margin-right: 1.5em;
+    float: right;
+    height: 2.5em;
+    width: 10em;
+    border: none;
+    background: black;
+    color: #e4e526;
+    font-size: 12pt;
+    border-radius: 8px;
+}
+
+.subBtn:hover {
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+/*tickets page styling*/
+
+#openTicket, #closedTicekts, #allTickets {
+    min-height: 500px;
+    margin-right: 3em;
+    margin-bottom: 3.5em;
+    margin-top: 3.5em;
+    text-align: right;
+}
+
+.ticketTable {
+    width: 51em;
+    border: none;
+    margin-top: 2em;
+    text-align: center;
+    transform:translate(-100%,0);
+    margin-left: 100%;
+    font-family: myFirstFont;
+}
+
+.tbData {
+    margin-bottom: 3em;
+    box-shadow: 2px 2px 10px black;
+}
+
+.tdData {
+    width: 17em;
+}
+
+.tableHead {
+    width: 15em;
+}
+.search {
+    display: inline-block;
+}
+
+.searchTxt, .searchBtn {
+    border: none;
+    box-shadow: 2px 2px 10px black;
+    height: 2em;
+}
+
+.searchTxt {
+    width: 30em;
+}
+
+.searchBtn {
+    background: black;
+    font-family: myFirstFont;
+    color: #e4e526;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .inlineLogo {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        width: 95%;
+        height: auto;
+        margin-left: 50%;
+        transform:translate(-50%,0);
+    }
+    .inlineList li {
+        margin: 0;
+        padding: 5px 0px 5px 0;
+        text-align: center;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #e4e526;
+    }
+
+    .inlineList li:first-child{
+        border-top: 2px solid #e4e526;
+    }
+
+    .inlineList {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: none;
+    }
+    .navlist {
+        margin: 0;
+        padding: 0;
+    }
+    .inline li {
+        padding-right: .5em;
+    }
+    .navbar {
+        display: block;
+    }
+    .hamburger {
+        margin-left: 50%;
+        transform: translate(-50%,0);
+    }
+    .hamburger:hover {
+        filter: drop-shadow(0 0 5px #e4e526);
+    }
+
+    #slider img, #slider, .sliderItem, .sliderItems {
+        height: 348px;
+    }
+
+    #slider, .sliderItem {
+        width: 681px;
+    }
+
+    .sliderItems {
+        width: 2720px;
+    }
+    
+    .bodyText {
+        font-size: 8.5pt;
+    }
+
+    #indexPhoto1 {
+        display: none;
+    }
+
+    #indexBlock1, #indexBlock2 {
+        right: .5em;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .products {
+        width: 100%;
+        height: 250px;
+    }
+
+    .products img {
+        height: 250px;
+        width: auto;
+    }
+
+    .productPG{
+        min-height: 400px;
+    }
+
+    .prodName {
+        font-size: 22pt;
+    }
+
+    .prodDetail {
+        width: 80%;
+    }
+
+    .aboutPic {
+        width: 350px;
+        height: auto;
+    }
+
+    #infoBlock1, #infoBlock2 {
+        width: 100%;
+    }
+
+    .text {
+        font-size: 10pt;
+    }
+
+    #block2Text {
+        margin-right: 1em;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+    .cInfo h2 {
+        font-size: 14pt;
+    }
+
+    .bold {
+        font-size: 10pt;
+    }
+
+    .norm {
+        font-size: 9pt;
+    }
+
+    #login {
+        margin-top: 6em;
+    }
+
+    .container {
+        height: 450px;
+    }
+
+    #openTicket, #closedTicekts, #allTickets {
+        min-height: 350px;
+        margin-top: 1em;
+        margin-right: 0;
+    }
+
+    .ticketTable {
+        width: 95%;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        font-size: 10pt;
+    }
+
+    .search {
+        display: block;
+        margin-right: 0;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 1em;
+    }
+
+    .searchTxt {
+       width: 20em;
+    }
+
+    #customer {
+        margin: 0;
+    }
+
+    #user {
+        width: 98%;
+        margin-left: 0;
+    }
+
+    #name {
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #custMenu {
+        width: 98%;
+        text-align: center;
+        position: relative;
+        box-shadow: none;
+    }
+
+    #msgBody {
+        text-align: center;
+        font-family: myFirstFont;
+        font-size: 18pt;
+        margin-top: 3em;
+        width: 98%;
+    }
+
+    .center {
+        display: inline-block;
+        width: 98%;
+        font-family: myFirstFont;
+    }
+
+    .txtSub {
+        width: 100%;
+        height: 20em;
+        border: none;
+        box-shadow: 2px 2px 10px black;
+    }
+
+    #sbmTxt {
+        width: 100%;
+        margin-left: 50%;
+        transform:translate(-50%,0);
+        margin-top: 1em;
+    }
+
+    .subBtn, .type {
+        font-family: myFirstFont;
+    }
+
+    .subBtn {
+        margin-right:0;
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+
+    .inline img {
+        width: 15px;
+        height: auto;
+    }
+    
+    .inline {
+        margin: 0;
+        margin-right: 1em;
+    }
+
+    #copyR {
+        font-size: 10pt;
+        margin-bottom: .2em;
+        vertical-align: middle;
+    }
+    
+    #slider img, #slider, .sliderItem {
+        width: 380px;
+    }
+
+    #slider, .sliderItem, #slider img, .sliderItems {
+        height: auto;
+    }
+
+    .sliderItems {
+        width: 1520px;
+    }
+
+    .bodyText {
+        font-size: 8pt;
+    }
+
+    .indexH2 {
+        font-size: 14pt;
+        text-align: center;
+        width: 100%;
+    }
+
+    #indexPhoto1 {
+        float: none;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        margin-bottom: 1em;
+        width: 300px;
+        height: auto;
+        display: block;
+    }
+
+    #indexBlock1, #indexBlock2 {
+        margin-left: 50%;
+        transform:translate(-50%,0);
+        width: 270px;
+        display: block;
+        float: none;
+    }
+
+    #indexBlock2 {
+        margin-bottom: 2em;
+        height: auto;
+    }
+
+    .products {
+        width: 100%;
+        height: 150px;
+    }
+
+        .products img {
+            height: 150px;
+            width: auto;
+        }
+
+    .productPG {
+        min-height: 32em;
+    }
+
+    .prodName {
+        font-size: 16pt;
+    }
+
+    .prodDetail {
+        width: 90%;
+        font-size: 8pt;
+    }
+
+    .aboutPic {
+        width: 300px;
+        height: auto;
+        float: none;
+    }
+
+    #block1Photo, #block2Photo {
+        float: none;
+        margin-left: 50%;
+        transform:translate(-50%,0);
+        margin-bottom: 1em;
+    }
+
+    #infoBlock1, #infoBlock2 {
+        width: 100%;
+        float: none;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 10pt;
+        display: block;
+    }
+
+    #block2Text, #block1Text {
+        margin: 0;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+    }
+
+    #map {
+        height: 200px;
+        margin-bottom: 3em;
+    }
+
+    .cInfo h2 {
+        font-size: 10pt;
+    }
+
+    .cInfo {
+        margin-bottom: 4.2em;
+    }
+
+    .bold {
+        font-size: 10pt;
+    }
+
+    .norm {
+        font-size: 6pt;
+    }
+
+    #login {
+        margin-top: 6em;
+    }
+
+    .container {
+        height: 450px;
+    }
+
+    .acctTable {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .txtBox {
+        width: 15em;
+    }
+
+    .longTxt {
+        width: 15em;
+    }
+
+    .regBtn {
+        width: 15em;
+    }
+
+    #openTicket, #closedTicekts, #allTickets {
+        min-height: 250px;
+        margin-top: 1em;
+        margin-right: 0;
+    }
+
+    .ticketTable {
+        width: 95%;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+    }
+
+    .search {
+        display: block;
+        margin-right: 0;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 1em;
+        width: auto;
+    }
+
+    .searchTxt {
+        width: 12em;
+    }
+
+    #customer {
+        margin: 0;
+    }
+
+    #user {
+        width: 98%;
+        padding: 0;
+        margin: 0;
+        margin-left: 0;
+    }
+
+    #name {
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #custMenu {
+        width: 98%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        position: relative;
+        box-shadow: none;
+        margin-top: 2.5em;
+    }
+
+    #msgBody {
+        text-align: center;
+        font-family: myFirstFont;
+        font-size: 18pt;
+        margin-top: 3em;
+        width: 98%;
+    }
+
+    .center {
+        display: inline-block;
+        width: 98%;
+        font-family: myFirstFont;
+    }
+
+    .txtSub {
+        width: 100%;
+        height: 20em;
+        border: none;
+        box-shadow: 2px 2px 10px black;
+    }
+
+    #sbmTxt {
+        width: 100%;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 1em;
+    }
+
+    .subBtn, .type {
+        font-family: myFirstFont;
+    }
+
+    .subBtn {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .inline img {
+        width: 10px;
+        height: auto;
+    }
+
+    .inline {
+        margin: 0;
+        margin-right: 1em;
+    }
+
+    #copyR {
+        font-size: 6pt;
+        margin-bottom: .2em;
+        vertical-align: middle;
+    }
+
+    .title {
+        font-size: 20pt;
+    }
+
+    #slider img, #slider, .sliderItem {
+        width: 300px;
+    }
+
+   #slider, .sliderItem, #slider img, .sliderItems {
+            height: auto;
+    }
+
+    .sliderItems {
+        width: 1200px;
+    }
+
+    .bodyText {
+        font-size: 8pt;
+    }
+
+    .indexH2 {
+        font-size: 14pt;
+        text-align: center;
+        width: 100%;
+    }
+
+    #indexPhoto1 {
+        float: none;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        margin-bottom: 1em;
+        width: 280px;
+        height: auto;
+        display: block;
+    }
+
+    #indexBlock1, #indexBlock2 {
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        width: 270px;
+        display: block;
+        float: none;
+    }
+
+    #indexBlock2 {
+        margin-bottom: 2em;
+        height: auto;
+    }
+
+    .products {
+        width: 100%;
+        height: 100px;
+    }
+
+        .products img {
+            height: 100px;
+            width: auto;
+        }
+
+    .productPG {
+        min-height: 34em;
+    }
+
+    .prodName {
+        font-size: 12pt;
+    }
+
+    .prodDetail {
+        width: 90%;
+        font-size: 7pt;
+    }
+
+    .text {
+        font-size: 8pt;
+        display: block;
+    }
+
+    #map {
+        height: 175px;
+        margin-bottom: 3em;
+    }
+
+    .cInfo h2 {
+        font-size: 10pt;
+    }
+
+    .cInfo {
+        margin-bottom: 4.2em;
+    }
+
+    .bold {
+        font-size: 8pt;
+    }
+
+    .norm {
+        font-size: 4pt;
+    }
+
+    #login {
+        margin-top: 6em;
+    }
+
+    .container {
+        height: 450px;
+    }
+
+    .acctTable {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .txtBox {
+        width: 11em;
+    }
+
+    .longTxt {
+        width: 11em;
+    }
+
+    .regBtn {
+        width: 11em;
+        height: 2em;
+    }
+
+    .register {
+        font-size: 8pt;
+    }
+
+    #openTicket, #closedTicekts, #allTickets {
+        min-height: 250px;
+        margin-top: 1em;
+        margin-right: 0;
+    }
+
+    .ticketTable {
+        width: 95%;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        font-size: 8pt;
+    }
+
+    .search {
+        display: block;
+        margin-right: 0;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    .searchTxt {
+        width: 16em;
+    }
+
+    #customer {
+        margin: 0;
+    }
+
+    #user {
+        width: 98%;
+        padding: 0;
+        margin: 0;
+        margin-left: 0;
+    }
+
+    #name {
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #custMenu {
+        width: 98%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        position: relative;
+        box-shadow: none;
+        margin-top: 2.5em;
+    }
+
+    #msgBody {
+        text-align: center;
+        font-family: myFirstFont;
+        font-size: 18pt;
+        margin-top: 3em;
+        width: 98%;
+    }
+
+    .center {
+        display: inline-block;
+        width: 98%;
+        font-family: myFirstFont;
+    }
+
+    .txtSub {
+        width: 100%;
+        height: 20em;
+        border: none;
+        box-shadow: 2px 2px 10px black;
+    }
+
+    #sbmTxt {
+        width: 100%;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 1em;
+    }
+
+    .subBtn, .type {
+        font-family: myFirstFont;
+    }
+
+    .subBtn {
+        margin: 0;
+        width: 100%;
+    }
+}
