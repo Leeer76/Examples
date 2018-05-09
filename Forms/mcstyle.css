@@ -1,0 +1,82 @@
+body						{background-image: url(images/mc.jpg);}
+
+header						{background-image: linear-gradient(to right, #b3babd, #f0f1eb);
+							width: 47.8em;
+							margin-left: 2em;
+							border: 2px solid #000001;
+							border-radius: 15px;
+							margin-top: 1.5em;
+							box-shadow: 5px 5px 5px #000000;}	
+
+h1, h3						{font-family: courier;
+							font-weight: bold;
+							color: #ffffff;}
+							
+h3							{margin-left: .7em;
+							color: #f0f1eb;
+							text-shadow: 3px 3px 5px #000000;}
+							
+h1							{margin-right: 1.5em;
+							text-align: right;
+							color: #000000;
+							font-size: 30pt;
+							text-shadow: 5px 5px 5px #aeaeaf;}
+							
+fieldset					{color: #ffffff;
+							border: 3px solid #f0f1eb;
+							margin-left: 3em;
+							margin-top: 1em;
+							background-image: linear-gradient(to bottom right, #b3babd, #f0f1eb);
+							box-shadow: 5px 5px 5px #000000;}
+							
+legend						{color: #f0f1eb;
+							font-family: courier;
+							font-weight: bold;
+							font-size: 18pt;
+							text-shadow: 3px 3px 5px #000000;}
+							
+p							{color: #000000;
+							margin-left: 43em;
+							margin-top: 1.5em;}
+										
+#item						{width: 45em;}
+
+#item input					{margin-left: 2em;}
+
+#custinfo					{width: 37em;
+							color: #000000;
+							margin-left: 11em;
+							padding-bottom: 1.5em;
+							padding-top: 1em;}			
+							
+#nada						{margin-bottom: 1em;}
+
+#fname						{margin-left: 2em;}
+
+#lname						{margin-left: 2em;}
+
+#phone						{margin-left: 4em;}
+
+#email						{margin-left: 3.5em;}
+
+#ccn						{margin-left: 1.1em;}
+
+#exp						{margin-left: 2.6em;}
+							
+#submit, #reset, #callme	{background-color: #aeaeaf;
+							color: #f0f1eb;
+							box-shadow: 5px 5px 5px #000000;
+							font-size: 24px;
+							margin-left: .5em;
+							margin-right: .1em;
+							font-family: sans-serif;
+							font-weight: bold;
+							border: 1px solid #f0f1eb;
+							border-radius: 6px;}
+							
+#submit						{margin-left: 19.6em;
+							margin-bottom: 3em;
+							margin-top: 2em;}
+							
+#wrapper					{margin: auto;
+							width: 960px;}							

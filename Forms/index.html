@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Erik Lee">
+		<meta name="date" content="Dec 9, 2016">
+		
+		<link href="mcstyle.css" rel="stylesheet">
+		
+		<!-- [if 1t IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif] -->
+		
+		<title>Millennium Order Form</title>
+	</Head>
+	
+	<body id="wrapper">
+		<header>
+			<h1>Order Form</h1>
+		</header>
+		<form method="post" name="c_order" action="http://www.mill_computers.com/cgmailer.cgi">
+		<fieldset id="item">
+			<legend>Item Options</legend>
+				<h3>Processor speed:</h3>
+				<input type="radio" name="speed" id="gh2.5">2.5 GHz
+				<input type="radio" name="speed" id="gh3.3">3.3 GHz
+				<input type="radio" name="speed" id="gh4.0">4.0 GHz
+				<input type="radio" name="speed" id="gh5.5">5.5 GHz
+				<h3>Memory:</h3>
+				<input type="radio" name="memory" id="mb128">128 MB
+				<input type="radio" name="memory" id="mb256">256 MB
+				<input type="radio" name="memory" id="mb512">512 MB
+				<input type="radio" name="memory" id="gb1">1 GB
+				<input type="radio" name="memory" id="gb2">2 GB
+				<input type="radio" name="memory" id="gb4">4 GB
+				<h3>Drive size:</h3>
+				<input type="radio" name="drive" id="gb160">160 GB
+				<input type="radio" name="drive" id="gb180">180 GB
+				<input type="radio" name="drive" id="gb250">250 GB
+				<h3>Monitor size:</h3>
+				<input type="radio" name="monitor" id="xsmmon">15-inch
+				<input type="radio" name="monitor" id="smmon">17-inch
+				<input type="radio" name="monitor" id="medmon">19-inch
+				<input type="radio" name="monitor" id="xlmon">21-inch
+				<h3>CD-ROM:</h3>
+				<input type="radio" name="rom" id="24x">24x
+				<input type="radio" name="rom" id="32x">32x
+				<input type="radio" name="rom" id="48x">48x
+				<input type="radio" name="rom" id="64x">64x
+				<input type="radio" name="rom" id="72x">72x
+				<h3>DVD player:</h3>
+				<input type="radio" name="yes" id="yes">yes
+				<input type="radio" name="no" id="no">no
+				<h3>CD burner:</h3>
+				<input type="radio" name="ya" id="ya">yes
+				<input type="radio" name="na" id="na">no
+				<h3>DVD burner:</h3>
+				<input type="radio" name="yea" id="yea">yes
+				<input type="radio" name="noo" id="noo">no
+				<h3>LAN card:</h3>
+				<input type="radio" name="yeah" id="yeah">yes
+				<input type="radio" name="nabro" id="nabro">no
+				<h3>Internal 56k modem:</h3>
+				<input type="radio" name="yep" id="yep">yes
+				<input type="radio" name="nope" id="nope">no
+				<h3>Would you like to be added to the Millennium Computers mailing list:</h3>
+				<input type="radio" name="yaya" id="yaya">yes
+				<input type="radio" name="nada" id="nada">no
+		</fieldset>
+		<p>required fields *</p>
+		<fieldset id="custinfo">
+			<legend>Customer Information</legend>
+				<label id="fname">*First Name: <input type="text" name="fname"  required="required"></label>
+				<label id="lname">*Last Name: <input type="text" name="lname"  required="required"></label><br><br>
+				<label id="phone">*Phone: <input type="tel" name="phone"  required="required"></label>
+				<label id="email">*E-Mail: <input type="email" name="email"  required="required"></label><br><br>
+				<label id="ccn">*Credit Card #: <input type="password" name="ccn"  required="required"></label>
+				<label id="exp">*Exp Date: <input type="date" name="expiration"  required="required"></label> 
+		</fieldset>
+			<input type="submit" id="submit" value="Send">
+			<input type="reset" id="reset" value="Cancel">
+			<input type="submit" id="callme" value="Call Me">
+		</form>
+	
+	</body>
+	
+</html>
