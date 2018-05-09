@@ -1,0 +1,45 @@
+body				{background-image: radial-gradient(#f2da91, #d96704);
+					color: #bf4904;
+					font-family: Gergian, "Times New Roman", sans-serif;}
+					
+header				{background-color: #bf4904;
+					color: #f2da91;
+					text-shadow: 6px 6px 10px #f29d35;
+					word-spacing: .50em;
+					font-family: courier new, sans-serif;
+					text-indent: 2em;}
+					
+h2					{letter-spacing: .12em;
+					word-spacing: .20em;
+					text-align: center;}
+					
+h4					{text-indent: 4em;}
+					
+ol					{border: 1px solid black;
+					outline: dashed #ff530d;}
+					
+h3					{text-indent: 5em;}
+
+img					{margin-top: 1em}
+
+.nav 				{text-align: right;
+					word-spacing: .50em}
+					
+.float				{float: right;}	
+										
+.space				{word-spacing: .12em;
+					letter-spacing: .05em;
+					line-height: 200%;}
+					
+a:link				{color: #f2da91;}
+
+a:visited			{color: #bf4904;}
+
+a:hover				{color: #d96704;}
+
+a:active			{color: #d96704;}
+					
+#wrapper			{margin-left: auto;
+					margin-right: auto;
+					width: 960px;}
+					
