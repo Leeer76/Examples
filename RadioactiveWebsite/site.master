@@ -1,0 +1,49 @@
+﻿<%@ Master Language="VB" CodeFile="site.master.vb" Inherits="site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+       
+    </asp:ContentPlaceHolder>
+     <link href="RadioactiveSoftware/style/styleSheet.css" rel="stylesheet" />
+        <script src="RadioactiveSoftware/scripts/jquery-3.2.1.min.js"></script>
+        <script src="RadioactiveSoftware/scripts/myScripts.js"></script>
+    <link rel="icon" href="RadioactiveSoftware/images/favicon.png" type="image/x-icon" />
+</head>
+<body>
+    <div class="navbar">
+     <div class="inlineLogo">
+       <a class="navbar-brand" runat="server" href="~/index.aspx"><img class="logo" src="RadioactiveSoftware/images/logoworkBook.svg"/></a>
+     </div>
+     <div class="inlineList">
+        <ul class="navlist">
+         <li><a runat="server" href="~/products.aspx">Products</a></li>
+         <li><a runat="server" href="~/about.aspx">About</a></li>
+         <li><a runat="server" href="~/contact.aspx">Contact</a></li>
+         <li><a runat="server" href="~/Login.aspx">Customer</a></li>
+        </ul>
+      </div> 
+    </div>   
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <footer>
+        <p id="copyR">&copy; <span class="year"></span> - Radioactive Software</p>
+        
+        <ul class="inline">
+            <li><a href="products.aspx"><img src="RadioactiveSoftware/images/software.png"></a></li>
+            <li><a href="contact.aspx"><img src="RadioactiveSoftware/images/contact.png"></a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><img src="RadioactiveSoftware/images/facebook.png"></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank"><img src="RadioactiveSoftware/images/linkedin.png"></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><img src="RadioactiveSoftware/images/twitter.png"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
