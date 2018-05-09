@@ -1,0 +1,19 @@
+body					{font-family: courier, Arial, Helvetica, sans-serif;
+						color: #47a805;
+						margin-left: 3em;
+						background-image: linear-gradient(to right, #000000,#004000);}
+
+h1						{text-shadow: 2px 2px 10px #91db40;}
+
+h1, h3					{margin-left: .5em;
+						margin-top: 2em;}
+						
+select					{margin-left: 1em;}
+
+
+
+						
+footer					{margin-left: .5em;
+						margin-top: 3em;}
+
+						 
