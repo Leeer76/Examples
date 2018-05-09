@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/login/site.master" AutoEventWireup="false" CodeFile="products.aspx.vb" Inherits="products" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/site.master" AutoEventWireup="false" CodeFile="products.aspx.vb" Inherits="products" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -6,9 +6,9 @@
    <div class="productPG">
     <h1 class="title">Products</h1>
     <div class="products">
-        <img id="football" class="product" src="../RadioactiveSoftware/images/box01.png" />
-        <img id="reactor" class="product" src="../RadioactiveSoftware/images/box02.png" />
-        <img id="fallout" class="product" src="../RadioactiveSoftware/images/box03.png" />
+        <img id="football" class="product" src="RadioactiveSoftware/images/box01.png" />
+        <img id="reactor" class="product" src="RadioactiveSoftware/images/box02.png" />
+        <img id="fallout" class="product" src="RadioactiveSoftware/images/box03.png" />
     </div>
 
     <h1 class="prodName"></h1>

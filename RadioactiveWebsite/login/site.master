@@ -8,39 +8,25 @@
     <asp:ContentPlaceHolder id="head" runat="server">
        
     </asp:ContentPlaceHolder>
-     <link rel="stylesheet" href="../RadioactiveSoftware/style/styleSheet.css" />
-        <script src="../RadioactiveSoftware/scripts/jquery-3.2.1.min.js"></script>
-        <script src="../RadioactiveSoftware/scripts/myScripts.js"></script>
-    <link rel="icon" href="../RadioactiveSoftware/images/favicon.png" type="image/x-icon" />
+     <link href="RadioactiveSoftware/style/styleSheet.css" rel="stylesheet" />
+        <script src="RadioactiveSoftware/scripts/jquery-3.2.1.min.js"></script>
+        <script src="RadioactiveSoftware/scripts/myScripts.js"></script>
+    <link rel="icon" href="RadioactiveSoftware/images/favicon.png" type="image/x-icon" />
 </head>
 <body>
     <div class="navbar">
      <div class="inlineLogo">
-       <a class="navbar-brand" runat="server" href="~/login/index.aspx"><img class="logo" src="../RadioactiveSoftware/images/logoworkBook.svg"/></a>
+       <a class="navbar-brand" runat="server" href="~/index.aspx"><img class="logo" src="RadioactiveSoftware/images/logoworkBook.svg"/></a>
      </div>
      <div class="inlineList">
         <ul class="navlist">
-         <li><a runat="server" href="~/login/products.aspx">Products</a></li>
-         <li><a runat="server" href="~/login/about.aspx">About</a></li>
-         <li><a runat="server" href="~/login/contact.aspx">Contact</a></li>
-         <li><a runat="server" href="~/Login.aspx">Logout</a></li>
+         <li><a runat="server" href="~/products.aspx">Products</a></li>
+         <li><a runat="server" href="~/about.aspx">About</a></li>
+         <li><a runat="server" href="~/contact.aspx">Contact</a></li>
+         <li><a runat="server" href="~/Login.aspx">Customer</a></li>
         </ul>
       </div> 
-    </div>
-    <div id="customer">
-         <div id="name">
-             <h2 id="user">Welcome, <span id="username" runat="server"></span></h2>
-         </div>
-    <div id="custMenu">
-        <ul id="custMenuList">
-            <li><a runat="server" href="~/login/ViewOpenTickets.aspx">View Open Tickets</a></li>
-            <li><a runat="server" href="~/login/ViewClosedTickets.aspx">View Closed Tickets</a></li>
-            <li><a runat="server" href="~/login/ViewAllTickets.aspx">View All Tickets</a></li>
-            <li><a id="logOut" runat="server" href="~/login/SubmitTicket.aspx">Submit New Ticket</a></li>
-        </ul>
-    </div>
-    </div>
-   
+    </div>   
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
@@ -52,11 +38,11 @@
         <p id="copyR">&copy; <span class="year"></span> - Radioactive Software</p>
         
         <ul class="inline">
-            <li><a href="products.aspx"><img src="../RadioactiveSoftware/images/software.png"></a></li>
-            <li><a href="contact.aspx"><img src="../RadioactiveSoftware/images/contact.png"></a></li>
-            <li><a href="https://www.facebook.com" target="_blank"><img src="../RadioactiveSoftware/images/facebook.png"></a></li>
-            <li><a href="https://www.linkedin.com" target="_blank"><img src="../RadioactiveSoftware/images/linkedin.png"></a></li>
-            <li><a href="https://www.twitter.com" target="_blank"><img src="../RadioactiveSoftware/images/twitter.png"></a></li>
+            <li><a href="products.aspx"><img src="RadioactiveSoftware/images/software.png"></a></li>
+            <li><a href="contact.aspx"><img src="RadioactiveSoftware/images/contact.png"></a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><img src="RadioactiveSoftware/images/facebook.png"></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank"><img src="RadioactiveSoftware/images/linkedin.png"></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><img src="RadioactiveSoftware/images/twitter.png"></a></li>
         </ul>
     </footer>
 </body>

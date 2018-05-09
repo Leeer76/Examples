@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/login/site.master" AutoEventWireup="false" CodeFile="contact.aspx.vb" Inherits="contact" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/site.master" AutoEventWireup="false" CodeFile="contact.aspx.vb" Inherits="contact" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -71,7 +71,7 @@
         
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX40awi2uYohdQulMA7-RPrclXVCEBqbA&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key="Enter Key Here"&callback=myMap"></script>
 
 </asp:Content>
 
