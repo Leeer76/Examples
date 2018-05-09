@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Erik Lee">
+		<meta name="date" content="Jan 11, 2018">
+		<!-- [if 1t IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif] -->
+		<link rel="stylesheet" href="styles/defaultStyle.css">
+		<title>Stranger Things Card Game</title>
+	</Head>
+	<body>
+		<div class="flex">
+			<div class="inline">
+				<div id="clickMe1">
+					Joyce Byers
+				</div>
+				<div id="picFrame1" class="score">
+					<img id="joyce" src="images/joyce.png" alt="Joyce Byers">
+					<span>Craziness</span>
+				</div>
+			</div>
+
+			<div class="inline">
+				<div id="clickMe2">
+					Chief Hopper
+				</div>
+				<div id="picFrame2" class="score">
+					<img id="hopper" src="images/hopper.png" alt="Cheif Hopper">
+					<span>Dad-bod</span>
+				</div>
+			</div>
+
+			<div class="inline">
+				<div id="clickMe3">
+					Eleven
+				</div>
+				<div id="picFrame3" class="score">
+					<img id="eleven" src="images/eleven.png" alt="Eleven">
+					<span>Awesomeness</span>
+				</div>
+			</div>
+
+			<div class="inline">
+				<div id="clickMe4">
+					Steve Harrington
+				</div>
+				<div id="picFrame4" class="score">
+					<img id="steve" src="images/steve.png" alt="">
+					<span>Babysitter Rage</span>
+				</div>
+			</div>
+		</div>
+		<p class="advent">
+
+		</p>
+		<div id="buttons">
+			<div id="start" class="inline">
+				<h2>Start Game</h2>
+			</div>
+			<div id="dice" class="inline">
+				<h2>Roll Your Fate</h2>
+			</div>
+	</div>
+		<script src="scripts/jquery-3.2.1.min.js"></script>
+		<script>
+		var num2 = Math.floor(Math.random()*6 + 1);
+		var num = Math.floor(Math.random() * 15 + 1);
+		var diceScore = Math.floor(Math.random()*20 + 1);
+		var enemy = Math.floor(Math.random()*20 + 1);
+			$(document).ready(function(){
+				$("#start").click(function(){
+					var story = ["","A Demogorgan has just emerged from a wall looking for blood, he sees you and starts to snarl... attack is unavoidable!", "Two Hawkins Electric vans have pulled up to your home, the doors slide open and about a dozen jackbooted thugs and suits start pouring out... will you exscape?", "It's dark and cold, death is all around... you are in the Upside-down. Theres a commotion off in the distance, it's Demodogs and their heading your way!", "You’re in Hawkins lab locked in a solitary room, you hear footsteps coming it’s Papa, you need to escape before he gets to you."];
+					var rStory = Math.floor(Math.random()*4 + 1);
+					$(".advent").empty();
+					$("#start").hide();
+					$("#buttons").append("<div id='rest' class='inline'><h2>Restart</h2></div>");
+					$(".advent").append(story[rStory]);
+					$(".advent").css({"background":"black"});
+					$("#clickMe1").click(function() {
+						$("#clickMe2").hide();
+						$("#clickMe3").hide();
+						$("#clickMe4").hide();
+						$("span").hide();
+						$("#picFrame1").slideToggle("slow");
+					});
+					$("#clickMe2").click(function(){
+						$("#clickMe1").hide();
+						$("#clickMe3").hide();
+						$("#clickMe4").hide();
+						$("span").hide();
+						$("#picFrame2").slideToggle("slow");
+					});
+					$("#clickMe3").click(function(){
+						$("#clickMe2").hide();
+						$("#clickMe1").hide();
+						$("#clickMe4").hide();
+						$("span").hide();
+						$("#picFrame3").slideToggle("slow");
+					});
+					$("#clickMe4").click(function(){
+						$("#clickMe2").hide();
+						$("#clickMe3").hide();
+						$("#clickMe1").hide();
+						$("span").hide();
+						$("#picFrame4").slideToggle("slow");
+					});
+					$(".score").click(function(){
+						var traits = ["","Craziness", "Awesomeness","Babysitter Rage", "Dad-bod", "Bob Sorrow", "Love Triangle"];
+						$(this).find("span").empty();
+						$(this).find("span").show();
+
+						$(this).find("span").append(traits[num2] + " +" + num);
+					});
+					$("#dice").click(function(){
+						var msg = "Congratulation you have defeated the odds and live to see what other strange things will happen in Hawkins.";
+						if(num + diceScore > enemy){
+							$(".advent").empty();
+							$(".advent").append(msg);
+						}else{
+							$(".advent").empty();
+							$(".advent").append("Oop... you're dead!");
+						};
+					});
+					$("#rest").click(function(){
+						window.location.reload();
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

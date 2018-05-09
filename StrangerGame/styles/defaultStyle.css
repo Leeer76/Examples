@@ -1,0 +1,107 @@
+body {
+  background-image: url("../images/background2.jpg");
+  background-repeat: repeat;
+  background-size: 100% auto;
+}
+
+.flex {
+  width: 1008px;
+  height: 350px;
+  margin-left: 50%;
+  margin-top: 5%;
+  transform: translate(-50%,0);
+}
+
+.inline {
+  display: inline-block;
+}
+
+#clickMe1, #picFrame1, #clickMe2, #picFrame2, #clickMe3, #picFrame3, #clickMe4, #picFrame4 {
+    background: linear-gradient(to bottom right, #202740, #8C0A19);
+    color: #F10304;
+    padding: 20px;
+    text-align: center;
+    width: 205px;
+    display: block;
+    border: 2px solid #000;
+    font-family: arial;
+    font-size: 16pt;
+  }
+
+#picFrame1, #picFrame2, #picFrame3, #picFrame4 {
+  background: linear-gradient(to bottom right, #8C0A19,  #202740);
+  padding: 20px;
+  width: 205px;
+  display: none;
+  border: 2px solid #000;
+  position: absolute;
+}
+
+#buttons {
+  width: 26em;
+  margin-top: 7%;
+  margin-left: 50%;
+  transform: translate(-50%,0);
+}
+
+#start, #dice, #rest {
+  color: white;
+  margin: 5px;
+  background: linear-gradient(to bottom right, #8C0A19,  #202740);
+  width: 12em;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.inline:hover {
+  box-shadow: 0px 0px 10px 5px red;
+}
+
+#start:active, #dice:active, #rest:active {
+  box-shadow: 0px 0px 10px 7px red;
+  transform: translate(0,2px);
+}
+
+.advent {
+  margin-left: 35%;
+  width: 30em;
+  color: white;
+  text-align: center;
+  font-size: 18pt;
+  font-family: courier;
+  opacity: .6;
+}
+
+@media only screen and (max-width: 1000px) {
+body {
+  background-size: contain;
+  background-repeat: repeat;
+}
+.flex {
+  width: auto;
+  height: auto;
+}
+.inline {
+  display: block;
+  align-items: center;
+}
+
+#picFrame1, #picFrame2, #picFrame3, #picFrame4 {
+  position: relative;
+}
+
+#start, #dice, #rest {
+  color: white;
+  margin: 5px;
+  background: linear-gradient(to bottom right, #8C0A19,  #202740);
+  width: 10em;
+  font-size: 10pt;
+  display: inline-block;
+}
+
+#buttons {
+  width: 18.7em;
+}
+
+}
