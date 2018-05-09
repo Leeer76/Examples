@@ -1,0 +1,77 @@
+h1 {
+  text-align: center;
+  font-size: 36pt;
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 0 0 10px black;
+  margin: 0;
+  z-index: 3;
+  position: relative;
+}
+
+.cand {
+  position:relative;
+	left:0px;
+	top:0px;
+	z-index: 1;
+}
+
+.bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+#back {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+#frame {
+  background-image: url('../images/frame.jpg');
+  width: 545px;
+  height: 629px;
+  margin-left: 50%;
+  transform: translate(-50%,0);
+  margin-top: 2em;
+  position: absolute;
+  z-index: 3;
+}
+
+#box {
+  width: 367px;
+  height: 454px;
+  margin-top: 1.3em;
+  margin-left: 50%;
+  transform: translate(-50%,0);
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+#head {
+  height: 172px;
+}
+
+#eyes {
+  height: 79px;
+}
+
+#nose {
+  height: 86px;
+}
+
+#mouth {
+  height: 117px;
+}
